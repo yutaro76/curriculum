@@ -124,53 +124,65 @@ body {
 @media screen and (max-width: 479px) {
     
     #wrapper {
+        height: 400px;
         width: 150px;
     }
 
     .header {
+        height: 100px;
         width: 150px;
     }
 
     .contents {
+        height: 200px;
         width: 150px;
     }
 
     .left {
+        height: 200px;
         width: 150px;
         float: none;
     }
 
     .center-right {
+        height: 200px;
         width: 150px;
         float: none;
     }
 
     .center-right-upper {
+        height: 150px;
         width: 150px;
     }
 
     .center-right-upper-left {
+        height: 150px;
         float: none;
     }
 
     .center-right-upper-left-top {
+        height: 75px;
         width: 150px;
     }
 
     .center-right-upper-left-bottom {
+        height: 75px;
         width: 150px;
     }
 
     .center-right-upper-right {
+        height: 150px;
         width: 150px;
         float: none;
     }
 
     .center-right-lower {
+        height: 50px;
         width: 150px;
     }
 
     .footer {
+        height: 100px;
         width: 150px;
     }
 }
