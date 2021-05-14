@@ -27,39 +27,42 @@ $ok_network = $network[0];
 $ok_language = $language[3];
 $ok_command = $command[1];
 
-//選択した回答と正解が一致していれば「正解！」、一致していなければ「残念・・・」と出力される処理を組んだ関数を作成する
+?>
 
+<!-- 選択した回答と正解が一致していれば「正解！」、一致していなければ「残念・・・」と出力される処理を組んだ関数を作成する -->
+
+<?php
+
+function getJudgement($chosen,$correct){
+    if($chosen==$correct){
+        echo "正解!";
+    } else {
+        echo "残念・・・";
+    }
+}
 
 ?>
+
 <p><!--POST通信で送られてきた名前を表示--><?php echo $my_name; ?>さんの結果は・・・？</p>
 <p>①の答え</p>
 <!--作成した関数を呼び出して結果を表示-->
+
 <?php
-if ( $ok_network == $annetwork) {
-    echo "正解！";
-} else {
-    echo "残念・・・";
-}
+getJudgement($annetwork,$ok_network);
 ?>
 
 <p>②の答え</p>
 <!--作成した関数を呼び出して結果を表示-->
+
 <?php
-if ( $ok_language == $anlanguage) {
-    echo "正解！";
-} else {
-    echo "残念・・・";
-}
+getJudgement($anlanguage,$ok_language);
 ?>
 
 <p>③の答え</p>
 <!--作成した関数を呼び出して結果を表示-->
+
 <?php
-if ( $ok_command == $ancommand) {
-    echo "正解！";
-} else {
-    echo "残念・・・";
-}
+getJudgement($ancommand,$ok_command);
 ?>
 
 </body>
